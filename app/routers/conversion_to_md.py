@@ -22,7 +22,3 @@ async def upload_pdf(file: UploadFile = File(...)):
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error al procesar el PDF: {str(e)}")
-    
-    
-
-    
